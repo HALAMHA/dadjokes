@@ -1,21 +1,9 @@
 import './index.html';
 import './style.css';
 import Vue from 'vue/dist/vue.js';
+import App from './App.vue';
 
 new Vue({
-
-  el: "#app",
-  data: {
-    upLikes: 0,
-    downLikes: 0,
-  },
-
-  methods: {
-    like() {
-      this.upLikes += 1;
-    },
-    dislike() {
-      this.downLikes += 1;
-    }
-  },
+  el: '#app',
+  render: h => h(App),
 });
